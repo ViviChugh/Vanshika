@@ -81,3 +81,104 @@ nav ul li.active a {
     transform: translate(-50%, -50%);
     color: white;
 }
+
+@media screen and (max-width: 767px) {
+    .logo {
+        z-index: 300px;
+        top: 75%;
+    }
+    .logo img {
+        width: 350px;
+    }
+nav{
+    background-color: transparent;
+}
+    .address {
+        margin: auto;
+        width: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .floating-btn {
+        height: 50px;
+        width: 50px;
+    }
+    .contact-box {
+        width: 350px;
+    }
+    .name {
+        width: 250px;
+    }
+    .email {
+        width: 250px;
+    }
+    .message {
+        width: 250px;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    /* nav {
+        top: 100px;
+        padding-top: 40px;
+        border: solid 2px black;
+    } */
+    .burger {
+        display: block;
+    }
+    .nav-links {
+        display: flex;
+        /* background-color: red; */
+        justify-content: space-around;
+        width: 30%;
+    }
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 100vh;
+        /* top: 8vh; */
+        background-color:  rgba(131, 71, 126, 0.5);;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .callout{
+        right:auto;
+        bottom: 50px;
+    }
+
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
